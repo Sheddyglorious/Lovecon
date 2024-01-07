@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="loveMatch.css">
+</head>
+<body>
+
+    <div class="love-calculator">
+        <h1>Love Calculator</h1>
+        <label for="yourName">Your Name:</label>
+        <input type="text" id="yourName" placeholder="Your Name"></br></br>
+
+        <label for="partnerName">Partner's Name:</label>
+        <input type="text" id="partnerName" placeholder="Partner's Name">
+
+        <button onclick="calculateLove()">Calculate Love</button>
+
+        <div id="result"></div>
+    </div>
+
+
+<!-- Footer -->
+  <footer>
+    <a href="../index.html" class="footer-item" onclick="changeText(this)">
+      <span class="symbol">🏠</span>
+      <span class="text">Home</span>
+    </a>
+    <a href="#" class="footer-item" onclick="changeText(this)">
+      <span class="symbol">💑</span>
+      <span class="text">Love</br> Match</span>
+    </a>
+    <a href="#" class="footer-item" onclick="changeText(this)">
+      <span class="symbol">👫</span>
+      <span class="text">Meet </br>Someone</span>
+    </a>
+    <a href="#" class="footer-item" onclick="changeText(this)">
+      <span class="symbol">👤</span>
+      <span class="text">Profile</span>
+    </a>
+  </footer>
+  
+  
+    <script src="loveMatch.js"></script>
+</body>
+</html>

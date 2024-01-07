@@ -1,0 +1,100 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column; /* Set flex direction to column */
+    align-items: center;
+    justify-content: space-between; /* Adjusted justify-content for better spacing */
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+    margin: 0;
+    background-color: #f5f5f5; /* Light grey background */
+}
+
+.love-calculator {
+    text-align: center;
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+h1 {
+    color: #e44d26; /* Love Calculator brand color */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333; /* Dark grey text */
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #e44d26; /* Love Calculator brand color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #c7381d; /* Darker shade on hover */
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333; /* Dark grey text */
+}
+
+/* Footer styling */
+footer {
+    width: 100%; /* Make the footer cover the full width */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333; /* Footer background color */
+    color: #fff; /* Text color for symbols and initial text */
+    padding: 10px;
+}
+
+.footer-item {
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* Remove underlines from links */
+    color: grey;/* Default color for links */
+    flex-grow: 1; /* Distribute available space equally among items */
+}
+
+/* Styles for the symbols */
+.footer-item .symbol {
+    font-size: 24px;
+}
+
+/* Styles for the text */
+.footer-item .text {
+    display: none;
+}
+
+/* Active state when text is shown */
+.footer-item.active .symbol {
+    display: none;
+}
+
+.footer-item.active .text {
+    display: inline;
+    color: grey; /* Color for the active text */
+}
+
