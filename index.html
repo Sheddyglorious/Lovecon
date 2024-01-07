@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Welcome back</title>
+</head>
+
+<body>
+  <header>
+    <h1>Letscon.com</h1>
+  </header>
+
+  <div class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div class="menu">
+      <div class="close-button" onclick="toggleMenu()">✕</div>
+      <a href="index.html">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">My Account</a>
+      <a href="#">Love Match</a>
+    </div>
+  </div>
+
+  <!--Top pi network users Slides -->
+  <h2>Top Pioneers</h2>
+  <div class="slideshow-container">
+    <!-- Slides -->
+
+    <div class="mySlides slide-active">
+      <img src="./img/user1.jpg" alt="User 1">
+      <div class="slide-text">Top User 1</div>
+    </div>
+
+    <div class="mySlides">
+      <img src="./img/user2.jpg" alt="User 2">
+      <div class="slide-text">Top User 2</div>
+    </div>
+
+    <div class="mySlides">
+      <img src="./img/user3.jpg" alt="User 3">
+      <div class="slide-text">Top User 3</div>
+    </div>
+
+    <div class="mySlides">
+      <img src="./img/user4.jpg" alt="User 4">
+      <div class="slide-text">Top User 4</div>
+    </div>
+
+    <!-- Navigation buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <a href="#" class="footer-item" onclick="changeText(this)">
+      <span class="symbol">🏠</span>
+      <span class="text">Home</span>
+    </a>
+    <a href="./loveMatch/loveMatch.html" class="footer-item" onclick="changeText(this)">
+      <span class="symbol">💑</span>
+      <span class="text">Love</br> Match</span>
+    </a>
+    <a href="#" class="footer-item" onclick="changeText(this)">
+      <span class="symbol">👫</span>
+      <span class="text">Meet </br>Someone</span>
+    </a>
+    <a href="#" class="footer-item" onclick="changeText(this)">
+      <span class="symbol">👤</span>
+      <span class="text">Profile</span>
+    </a>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

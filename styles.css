@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hamburger menu styling */
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  height: 20px;
+  background-color: snow; 
+  padding: 10px; 
+  border-radius: 5px; 
+}
+
+.bar {
+  background-color: #333; /* Color of the hamburger bars */
+  height: 3px;
+  width: 100%;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+/* Menu styling */
+.menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #f8f8f8; 
+  padding: 20px; /* Padding for each menu item */
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.menu a {
+  color: #333; /* Text color for menu items */
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+
+.change .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.change .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.menu.active {
+  display: flex;
+}
+
+.close-button {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 20px; 
+  color: #f0f0f0;
+  font-size: 20px;
+}
+
+/* Top Pioneers */
+.slideshow-container {
+  max-width: 800px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  z-index: 0;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: 150px; /* Set a smaller fixed height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.slide-text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 18px;
+}
+
+/* ... (previous CSS) ... */
+
+/* Navigation buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.next {
+  right: 0; /* Move the next button to the right side */
+}
+
+
+
+/* Footer styling */
+footer {
+    width: 100%; /* Make the footer cover the full width */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333; /* Footer background color */
+    color: #fff; /* Text color for symbols and initial text */
+    padding: 10px;
+}
+
+.footer-item {
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* Remove underlines from links */
+    color: grey;/* Default color for links */
+    flex-grow: 1; /* Distribute available space equally among items */
+}
+
+/* Styles for the symbols */
+.footer-item .symbol {
+    font-size: 24px;
+}
+
+/* Styles for the text */
+.footer-item .text {
+    display: none;
+}
+
+/* Active state when text is shown */
+.footer-item.active .symbol {
+    display: none;
+}
+
+.footer-item.active .text {
+    display: inline;
+    color: grey; /* Color for the active text */
+}
+
